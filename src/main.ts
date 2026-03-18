@@ -1,1 +1,1 @@
-// Remote entry - no app shell needed
+// Remote entry - components are exposed via Module Federation
