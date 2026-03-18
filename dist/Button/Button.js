@@ -1,1 +1,1 @@
-let e=require(`react/jsx-runtime`);var t=t=>(0,e.jsx)(`button`,{...t,className:` ${t.className??``}`});exports.Button=t;
+let e=require(`react/jsx-runtime`);var t=t=>(0,e.jsx)(`button`,{...t,style:{border:`1px solid red`},className:` ${t.className??``}`});exports.Button=t;
