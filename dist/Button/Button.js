@@ -1,8 +1,1 @@
-import { jsx as e } from "react/jsx-runtime";
-//#region src/Button/Button.tsx
-var t = (t) => /* @__PURE__ */ e("button", {
-	...t,
-	className: ` ${t.className ?? ""}`
-});
-//#endregion
-export { t as Button };
+let e=require(`react/jsx-runtime`);var t=t=>(0,e.jsx)(`button`,{...t,className:` ${t.className??``}`});exports.Button=t;

@@ -1,9 +1,1 @@
-import e from "./Input.module.js";
-import { jsx as t } from "react/jsx-runtime";
-//#region src/Input/Input.tsx
-var n = (n) => /* @__PURE__ */ t("input", {
-	...n,
-	className: `${e.input} ${n.className ?? ""}`
-});
-//#endregion
-export { n as Input };
+const e=require(`./Input.module.js`);let t=require(`react/jsx-runtime`);var n=n=>(0,t.jsx)(`input`,{...n,className:`${e.default.input} ${n.className??``}`});exports.Input=n;

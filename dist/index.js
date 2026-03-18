@@ -1,3 +1,1 @@
-import { Button as e } from "./Button/Button.js";
-import { Input as t } from "./Input/Input.js";
-export { e as Button, t as Input };
+Object.defineProperty(exports,Symbol.toStringTag,{value:`Module`});const e=require(`./Button/Button.js`),t=require(`./Input/Input.js`);exports.Button=e.Button,exports.Input=t.Input;

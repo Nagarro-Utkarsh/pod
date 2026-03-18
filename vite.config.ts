@@ -40,14 +40,14 @@ export default defineConfig({
     cssCodeSplit:true,
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      formats: ['es'],
+      formats: ['cjs'],
       fileName: 'index',
     },
     rolldownOptions: {
       external: ['react', 'react-dom', 'react/jsx-runtime'],
       output:[
         {
-          format: 'es',
+          format: 'cjs',
           dir: 'dist',
           preserveModules: true,
           preserveModulesRoot: resolve(__dirname, 'src'),
