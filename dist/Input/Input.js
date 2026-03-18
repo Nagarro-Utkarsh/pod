@@ -1,1 +1,0 @@
-const e=require(`./Input.module.js`);let t=require(`react/jsx-runtime`);var n=n=>(0,t.jsx)(`input`,{...n,className:`${e.default.input} ${n.className??``}`});exports.Input=n;

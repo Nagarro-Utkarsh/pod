@@ -1,1 +1,0 @@
-Object.defineProperty(exports,Symbol.toStringTag,{value:`Module`});const e=require(`./Button/Button.js`),t=require(`./Input/Input.js`);exports.Button=e.Button,exports.Input=t.Input;

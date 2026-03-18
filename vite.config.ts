@@ -1,60 +1,40 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { libInjectCss } from 'vite-plugin-lib-inject-css'
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
 import { resolve } from 'path'
+import { readdirSync, statSync } from 'fs'
 
-
-const assetNameCleaning = (assetInfo:any) => {
-  try {
-    const names = assetInfo?.names;
-    let raw =
-        (typeof assetInfo?.name === 'string' && assetInfo.name) ||
-        (Array.isArray(names) && names[0]) ||
-        (names && typeof names[Symbol.iterator] === 'function' && [...names][0]) ||
-        'asset';
-
-    // 2) Normalize: drop ?query/#hash; collapse *.module.css -> *.css
-    raw = String(raw)
-        .replace(/[?#].*$/, '')
-        .replace(/\.module(?=\.css$)/i, '');
-
-    const slash = raw.lastIndexOf('/');
-    const filename = slash >= 0 ? raw.slice(slash + 1) : raw;
-    const dot = filename.lastIndexOf('.');
-    const ext = dot > 0 ? filename.slice(dot) : '';
-    const base = (dot > 0 ? filename.slice(0, dot) : filename) || 'asset';
-
-    return `assets/${base}${ext}`;
-  } catch {
-    return 'assets/[name][extname]';
+function getComponentEntries(srcDir: string) {
+  const entries: Record<string, string> = {}
+  for (const name of readdirSync(srcDir)) {
+    const dir = resolve(srcDir, name)
+    if (statSync(dir).isDirectory()) {
+      entries[name] = resolve(dir, `${name}.tsx`)
+    }
   }
-};
+  return entries
+}
+
 export default defineConfig({
-  plugins: [react(), libInjectCss()],
+  plugins: [react(), cssInjectedByJsPlugin({ relativeCSSInjection: true, suppressUnusedCssWarning: true })],
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
     },
   },
   build: {
-    cssCodeSplit:true,
+    cssCodeSplit: true,
     lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
+      entry: getComponentEntries(resolve(__dirname, 'src')),
       formats: ['cjs'],
-      fileName: 'index',
     },
     rolldownOptions: {
       external: ['react', 'react-dom', 'react/jsx-runtime'],
-      output:[
-        {
-          format: 'cjs',
-          dir: 'dist',
-          preserveModules: true,
-          preserveModulesRoot: resolve(__dirname, 'src'),
-          entryFileNames: '[name].js',
-          assetFileNames: assetNameCleaning,
-        },
-      ]
+      output: {
+        format: 'cjs',
+        dir: 'dist',
+        entryFileNames: '[name].js',
+      },
     },
   },
 })

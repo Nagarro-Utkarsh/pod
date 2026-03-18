@@ -1,1 +1,0 @@
-require('../assets/Input.css');var e={input:`_input_62qqw_1`};exports.default=e;
