@@ -25,6 +25,7 @@ export default defineConfig({
         'react-dom': { singleton: true, requiredVersion: '^19.0.0' },
       },
       dts: false,
+      varFilename: 'remoteEntry-var.js',
     }),
   ],
   resolve: {
