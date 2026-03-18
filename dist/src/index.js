@@ -1,3 +1,3 @@
-import { Button as e } from "./components/Button/Button.js";
-import { Input as t } from "./components/Input/Input.js";
+import { Button as e } from "./Button/Button.js";
+import { Input as t } from "./Input/Input.js";
 export { e as Button, t as Input };

@@ -10,6 +10,7 @@ export default defineConfig({
     },
   },
   build: {
+    cssCodeSplit:true,
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
       formats: ['es'],
