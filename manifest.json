@@ -31,6 +31,11 @@
       "ShareCodeProvider": "/commerce-webcomponents/ui/SharecodeProvider.js",
       "SiteNavigation": "/commerce-webcomponents/ui/SiteNavigation.js",
       "utils": "/commerce-webcomponents/ui/AddressProvider.js"
+    },
+    "ui-composite": {
+      "CmsComponent": "/commerce-webcomponents/ui-composite/CmsComponent.js",
+      "CmsModularComponent": "/commerce-webcomponents/ui-composite/CmsModularBlockComponent.js",
+      "MobileTopBarNavigation": "/commerce-webcomponents/ui-composite/MobileTopBarNavigation.js"
     }
   }
 }
