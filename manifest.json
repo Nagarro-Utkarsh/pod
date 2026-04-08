@@ -15,5 +15,10 @@
       "EllipsisMenuPlusIcon": "/commerce-cart-webcomponents/ui-dist/EllipsisMenuPlusIcon.js",
       "HaveAccountModal": "/commerce-cart-webcomponents/ui-dist/HaveAccountModal.js"
     }
+  },
+  "commerce-checkout-webcomponents":{
+    "sdk": {
+      "checkoutSlice": "/commerce-checkout-webcomponents/sdk/checkoutSlice.js"
+    }
   }
 }
