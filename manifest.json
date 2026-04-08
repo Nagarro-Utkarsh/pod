@@ -28,7 +28,7 @@
     "ui": {
       "AddressProvider": "/commerce-webcomponents/ui/AddressProvider.js",
       "Footer": "/commerce-webcomponents/ui/Footer.js",
-      "ShareCodeProvider": "/commerce-webcomponents/ui/ShareCodeProvider.js",
+      "ShareCodeProvider": "/commerce-webcomponents/ui/SharecodeProvider.js",
       "SiteNavigation": "/commerce-webcomponents/ui/SiteNavigation.js",
       "utils": "/commerce-webcomponents/ui/AddressProvider.js"
     }
