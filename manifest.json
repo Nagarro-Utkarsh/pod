@@ -24,6 +24,13 @@
     "sdk": {
       "amshopSlice":"/commerce-webcomponents/sdk/amshopSlice.js",
       "cmsApi": "/commerce-webcomponents/sdk/cmsApi.js"
+    },
+    "ui": {
+      "AddressProvider": "/commerce-webcomponents/ui/AddressProvider.js",
+      "Footer": "/commerce-webcomponents/ui/Footer.js",
+      "ShareCodeProvider": "/commerce-webcomponents/ui/ShareCodeProvider.js",
+      "SiteNavigation": "/commerce-webcomponents/ui/SiteNavigation.js",
+      "utils": "/commerce-webcomponents/ui/AddressProvider.js"
     }
   }
 }
