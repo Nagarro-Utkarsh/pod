@@ -1,3 +1,19 @@
 {
-  "commerce-webcomponents": "/v1/index.cjs"
+  "commerce-webcomponents": "/v1/index.cjs",
+  "commerce-cart-webcomponents": {
+    "sdk": {
+      "cartCommonHelpers": "/commerce-cart-webcomponents/sdk-dist/cartCommonHelpers.js",
+      "cartSlice": "/commerce-cart-webcomponents/sdk-dist/cartSlice.js",
+      "myListSlice": "/commerce-cart-webcomponents/sdk-dist/myListSlice.js",
+      "SubCartDetail": "/commerce-cart-webcomponents/sdk-dist/SubCartDetail.js"
+    },
+    "ui-composite": {
+      "CartContainer": "/commerce-cart-webcomponents/ui-composite-dist/CartContainer.js"
+    },
+    "ui-dist": {
+      "CartMobileHeader": "/commerce-cart-webcomponents/ui-dist/CartMobileHeader.js",
+      "EllipsisMenuPlusIcon": "/commerce-cart-webcomponents/ui-dist/EllipsisMenuPlusIcon.js",
+      "HaveAccountModal": "/commerce-cart-webcomponents/ui-dist/HaveAccountModal.js"
+    }
+  }
 }
