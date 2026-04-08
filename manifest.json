@@ -1,5 +1,4 @@
 {
-  "commerce-webcomponents": "/v1/index.cjs",
   "commerce-cart-webcomponents": {
     "sdk": {
       "cartCommonHelpers": "/commerce-cart-webcomponents/sdk-dist/cartCommonHelpers.js",
@@ -19,6 +18,12 @@
   "commerce-checkout-webcomponents":{
     "sdk": {
       "checkoutSlice": "/commerce-checkout-webcomponents/sdk/checkoutSlice.js"
+    }
+  },
+  "commerce-webcomponents": {
+    "sdk": {
+      "amshopSlice":"/commerce-webcomponents/sdk/amshopSlice.js",
+      "cmsApi": "/commerce-webcomponents/sdk/cmsApi.js"
     }
   }
 }
