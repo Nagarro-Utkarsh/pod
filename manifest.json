@@ -37,5 +37,10 @@
       "CmsModularComponent": "/commerce-webcomponents/ui-composite/CmsModularBlockComponent.js",
       "MobileTopBarNavigation": "/commerce-webcomponents/ui-composite/MobileTopBarNavigation.js"
     }
+  },
+  "framework":{
+    "ui": {
+      "button": "/framework/ui/index.cjs"
+    }
   }
 }
