@@ -33,9 +33,14 @@
       "utils": "/commerce-webcomponents/ui/AddressProvider.js"
     },
     "ui-composite": {
-      "CmsComponent": "/commerce-webcomponents/ui-composite/CmsComponent.js",
-      "CmsModularComponent": "/commerce-webcomponents/ui-composite/CmsModularBlockComponent.js",
-      "MobileTopBarNavigation": "/commerce-webcomponents/ui-composite/MobileTopBarNavigation.js"
+      "CmsComponent":{
+        "client": "/commerce-webcomponent/ui-composite/client/CmsComponent.js",
+        "server": "/commerce-webcomponent/ui-composite/server/CmsComponent.js"
+      },
+      "CmsModularComponent": {
+        "client": "/commerce-webcomponent/ui-composite/client/ModularBlockComponent.js",
+        "server": "/commerce-webcomponent/ui-composite/server/ModularBlockComponent.js"
+      }
     }
   },
   "framework":{
